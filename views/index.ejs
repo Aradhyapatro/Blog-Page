@@ -2,25 +2,18 @@
 <%- include("templates/Navbar") -%>
 <div class="container bod">
     <ul>
-        <li>
-            <h1>
-                <%= d.Title %>
-            </h1>
-            <p>
-                <%= d.description%>
-            </p>
-        </li>
-        <% for(let i=1;i< d.length;i++){ %>
-            <li>
-                <h1>
-                    <%= d.Title%>
-                </h1>
-                <p class="text-truncate">
-                    <%= d.description %>
-                </p>
-                <a href="/<%= d[i].Title%>" class="page">Read More</a>
-            </li>
-        <% }%>
+        <h1>Home</h1>
+        <p> <%= d.description %> </p>
+    
+      <%  dd.forEach(function(post){ %>
+        <h1>
+            <%= post.Title %>
+        </h1>
+        <p>
+        <%= post.description.substring(0, 100) + " ..."%>
+        <a href="/<%=post.title%>">Read More</a>
+        </p>
+        <% }) %>
     </ul>
 </div>
 <%- include("templates/footer") -%>
