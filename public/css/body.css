@@ -1,0 +1,42 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bod{
+    margin: 5%;
+    padding-bottom: 70px;
+    margin-bottom: 90px;
+}
+
+.bod li{
+    margin: 4%;
+    list-style: none;
+}
+
+.bod h1{
+    margin-bottom: 4%;
+}
+
+.bodd p{
+    margin-bottom: 10%;
+}
+
+.bodd{
+    top:-108px;
+}
+
+.text-truncate{
+    max-width: 300px;
+    display: inline-block;
+}
+
+.page{
+    display: inline-block;
+    position: relative;
+    top: -24px;
+}

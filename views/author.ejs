@@ -1,0 +1,21 @@
+<%- include("templates/header") -%>
+<%- include("templates/Navbar") -%>
+<div class="container bod">
+    <ul>
+        <li>
+            <form method="post" action="/author">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" name="Title">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">description</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="description">
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </li>
+    </ul>
+</div>
+<%- include("templates/footer") -%>
+<%- include("templates/foot") -%>

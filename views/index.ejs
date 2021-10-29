@@ -1,0 +1,27 @@
+<%- include("templates/header") -%>
+<%- include("templates/Navbar") -%>
+<div class="container bod">
+    <ul>
+        <li>
+            <h1>
+                <%= d.Title %>
+            </h1>
+            <p>
+                <%= d.description%>
+            </p>
+        </li>
+        <% for(let i=1;i< d.length;i++){ %>
+            <li>
+                <h1>
+                    <%= d.Title%>
+                </h1>
+                <p class="text-truncate">
+                    <%= d.description %>
+                </p>
+                <a href="/<%= d[i].Title%>" class="page">Read More</a>
+            </li>
+        <% }%>
+    </ul>
+</div>
+<%- include("templates/footer") -%>
+<%- include("templates/foot") -%>
